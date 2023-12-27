@@ -1,4 +1,7 @@
 import logo from './logo.svg';
+import group1img from'./Group 1.png';
+import React, { useState } from 'react';
+
 
 import './App.css';
 
@@ -6,6 +9,8 @@ function App() {
   return (
 
     <div className = "App">
+
+      {/* Home container */}
       <div className="Home" id ="Container">
         <div className = "nav_bar">
           <div className = "left">
@@ -19,12 +24,13 @@ function App() {
           </div> 
         </div>
         <div className = "home-Main">
-          <p>test text lol</p>
-          {/* <img src={"Group 1.png"} alt="Logo" />; */}
-
+          <h1>Hello! I'm<br></br><span class="shirley">Shirley</span>✨</h1>
+          <img src={group1img} alt="Logo" className = "star" />
         </div>
  
       </div>
+
+
       <div className="About" id ="Container">
       </div>  
 
