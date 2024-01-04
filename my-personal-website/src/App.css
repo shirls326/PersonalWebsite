@@ -3,27 +3,24 @@
   width: 100vw;
 }
 
-.Home{
+.App{
   font-family: 'Itim';
-  font-size: 30px;
-  position: flex;
-  background-color: #0D1821;
+  color: white;
 
 
 }
-.nav_bar{
-  color: white;
-  width: 100%;
-  height: 10vh;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+
+.Home{
+
+  font-size: 30px;
+  position: flex;
+  background-color: #0d1821;
+
 
 }
 
 .home-Main{
-
+  padding-top: 10vh;
   color: white;
   width: 100%;
   display: flex;
@@ -66,7 +63,42 @@
 
 }
 
-.About{
-  
-  background-color: blue;
+
+
+img.star {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
 }
+img.star {
+  -webkit-animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+
+.About{
+  background-color: #290887;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.Work{
+  position: relative;
+  display: flex;
+
+  background-color: #0d1821;
+}
+
+
+
