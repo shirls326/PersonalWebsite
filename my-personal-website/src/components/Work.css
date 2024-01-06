@@ -1,0 +1,16 @@
+.Work{
+    position: relative;
+    display: flex;
+    background-color: #0d1821;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+#Work-Container{
+    background-color: #17222A;
+    height: 65vh;
+    width: 85vw;
+    border-radius: 2em;
+    margin: 2em;
+  }
+  
