@@ -1,5 +1,4 @@
-import group1img from'./Group 1.png';
-import shirleyimg from'./Group 1.png';
+
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
@@ -8,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Work from './components/Work';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -46,6 +46,7 @@ function App() {
       <Home/>
       <About/>
       <Work/>
+      <Skills/>
     </div>
   );
 }

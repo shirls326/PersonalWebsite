@@ -11,6 +11,7 @@ export default function Navbar({ visible }) {
             <p>home</p>
             <p>about</p>
             <p>work</p>
+            <p>skills</p>
             <p>contact</p>
           </div> 
         </div>

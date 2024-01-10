@@ -3,14 +3,43 @@
     display: flex;
     background-color: #0d1821;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
-#Work-Container{
-    background-color: #17222A;
+.Work-Container{
+    /* background-color: #17222A; */
+    background-color: rgba(63,17,194,0.1);
     height: 65vh;
     width: 85vw;
     border-radius: 2em;
     margin: 2em;
   }
+  .TA{
+    display: flex;
+    position:relative;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  
+  .TA-title{
+    margin-bottom: -0.5em;
+  }
+
+  .info-list{
+    font-size: 1.5em;
+    margin-left: -0.25em;
+    padding-bottom: 5em;
+    margin: 1.3em;
+ 
+  }
+
+  .Zaniac-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+  }
+
   
