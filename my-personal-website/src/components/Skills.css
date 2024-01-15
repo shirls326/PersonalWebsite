@@ -1,6 +1,6 @@
 .Skills{
     /* background-color: #3F11C2; */
-    background-color: #290887;
+    background-color: #0d1821;
     display: flex;
     position: relative;
     align-items: center;
@@ -13,9 +13,10 @@
 }
 
 .skills-container{
-    background-color:#3F11C1;
-    height: 75vh;
-    width: 85vw;
+    margin-top: 20vh;
+    background-color: rgba(63,17,194,0.1);
+    height:85vh;
+    width: 55vw;
     border-radius: 2em;
     margin: 2em;
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
@@ -25,11 +26,11 @@
     justify-content: space-evenly;
     /* align-items: center; */
 }
-.line{
+/* .line{
     margin-top: 3em;
     position: relative;
     height: 65vh;
-}
+} */
 .listedSkills{
     display: flex;
     position: relative;
@@ -39,3 +40,38 @@
 .skillsHeader{
     font-size: 3em;
   }
+
+.logos{
+    height: .6em;
+}
+
+.skillslistedtext{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+  }
+
+.skills-row{
+    display: flex;
+    flex-direction: row;
+
+
+  }
+.skills-col{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+  }
+
+  .skillsimg{
+    width: 50vh;
+    height:auto;
+
+  }
+  
+  
+  

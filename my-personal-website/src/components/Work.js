@@ -1,5 +1,6 @@
 import React from 'react'
 import './Work.css'
+import 'animate.css';
 
 export default function Work() {
   return (
@@ -7,7 +8,7 @@ export default function Work() {
     <div className="Work" id ="Container">
    
 
-        <div className='TA Work-Container'>
+        <div className='TA Work-Container animate__animated animate__fadeInDown'>
             <h1 className='TA-title'>Teaching Assistant<br></br> @Lehigh University</h1>
             <h2>Aug 2023 - Present</h2>
             <ul className='info-list'>
@@ -18,7 +19,7 @@ export default function Work() {
             </ul>
       
         </div>
-        <div className='TA Work-Container'>
+        <div className='TA Work-Container animate__animated animate__fadeInDown'>
             <h1 className='TA-title Zaniac-title'>Remote Developer Intern<br></br> @INDATA (Remote)</h1>
             <h2>April 2021 - June 2021</h2>
             <ul className='info-list'>
@@ -27,7 +28,7 @@ export default function Work() {
                 <li>Collaborated with supervisor from Google to advance project</li>
             </ul>
         </div>
-        <div className='TA Work-Container'>
+        <div className='TA Work-Container animate__animated animate__fadeInDown'>
             <h1 className='TA-title Zaniac-title'>Math Tutor<br></br>@Zaniac (Westport, CT)</h1>
             <h2>April 2021 - June 2021</h2>
             <ul className='info-list'>

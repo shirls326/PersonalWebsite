@@ -33,6 +33,7 @@
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
     color: transparent;
+    animation-duration: 5s; /* don't forget to set a duration! */
   
   
   }
