@@ -13,6 +13,14 @@
     width: 85vw;
     border-radius: 2em;
     margin: 2em;
+    opacity: 0;
+    transform: translateY(20px); /* Optionally, you can add some initial translation */
+    transition: opacity 0.5s, transform 0.5s; /* Optional: Add transitions for smoother animation */
+  }
+  
+  .Work-Container.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
   .TA{
     display: flex;
