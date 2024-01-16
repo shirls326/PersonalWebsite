@@ -1,20 +1,19 @@
 import React from 'react';
-import './Navbar.css'
+import './Navbar.css';
 
-export default function Navbar({ visible }) {
-    return (
-        <div className = 'nav_bar' style={{ display: !visible && 'none' }}>
-          <div className = "left">
-            <p>Shirley</p>
-          </div>
-          <div className = "right">
-            <p>home</p>
-            <p>about</p>
-            <p>work</p>
-            <p>skills</p>
-            <p>contact</p>
-          </div> 
-        </div>
-    );
+export default function Navbar({ visible, activePage }) {
+  return (
+    <div className={`nav_bar ${visible ? 'visible' : ''}`}>
+      <div className="left">
+        <p>Shirley ☻</p>
+      </div>
+      <div className="right">
+        <p className={activePage === 'home' ? 'active' : ''}>home</p>
+        <p className={activePage === 'about' ? 'active' : ''}>about</p>
+        <p className={activePage === 'work' ? 'active' : ''}>work</p>
+        <p className={activePage === 'skills' ? 'active' : ''}>skills</p>
+        <p className={activePage === 'contact' ? 'active' : ''}>contact</p>
+      </div>
+    </div>
+  );
 }
-

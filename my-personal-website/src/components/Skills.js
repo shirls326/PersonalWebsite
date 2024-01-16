@@ -5,7 +5,7 @@ import skillsimg from "./Skills mixed.svg";
 
 export default function Skills() {
   return (
-    <div className="Skills" id="Container">
+    <div className="Skills Container" id="Skills">
       {/* <h1 className="Skills-h1">Skills</h1> */}
       <div className="skills-container">
         <div className="listedSkills">

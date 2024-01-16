@@ -3,7 +3,7 @@ import './About.css'
 
 export default function About() {
   return (
-    <div className="About" id ="Container">
+    <div className="About Container" id ="About">
         <h2>I am a current Computer Science major in my 3rd year at Lehigh University. 
           I love to program and work on personal projects and problem solve for both myself and others. 
           I am a TA for Lehigh's CSE007 and CSE017 and enjoy assisting students into furthering their education on becoming a programmer. 

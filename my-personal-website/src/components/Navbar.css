@@ -17,3 +17,7 @@
     z-index: 999;
   
   }
+
+  .right p.active {
+    color: #725CFF;
+  }

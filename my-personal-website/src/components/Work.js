@@ -35,7 +35,7 @@ export default function Work() {
     }, []);
   
   return (
-    <div className="Work" id="Container">
+    <div className="Work Container" id="Work">
      <div
         ref={containerRef}
         className={`TA Work-Container ${isVisible ? 'visible' : ''}`}
