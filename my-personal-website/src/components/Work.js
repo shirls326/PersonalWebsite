@@ -22,14 +22,15 @@ export default function Work() {
       };
   
       const observer = new IntersectionObserver(handleIntersection, options);
+      const conrefcurrent = containerRef.current; // changing variable name due to warning 
   
-      if (containerRef.current) {
-        observer.observe(containerRef.current);
+      if (conrefcurrent) {
+        observer.observe(conrefcurrent);
       }
   
       return () => {
-        if (containerRef.current) {
-          observer.unobserve(containerRef.current);
+        if (conrefcurrent) {
+          observer.unobserve(conrefcurrent);
         }
       };
     }, []);

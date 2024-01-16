@@ -1,6 +1,5 @@
 import React from "react";
 import "./Skills.css";
-import line from "../Line 1.png";
 import skillsimg from "./Skills mixed.svg";
 
 export default function Skills() {

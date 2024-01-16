@@ -9,7 +9,6 @@ import Work from "./components/Work";
 import Skills from "./components/Skills";
 
 function App() {
-  const [navbarVisible, setNavbarVisible] = useState(true);
   const [activePage, setActivePage] = useState("home"); // Default active page is 'home'
 
   useEffect(() => {
@@ -55,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar visible={navbarVisible} activePage={activePage} />
+      <Navbar activePage={activePage} />
       <Home id="Home" />
       <About id="About" />
       <Work id="Work" />
