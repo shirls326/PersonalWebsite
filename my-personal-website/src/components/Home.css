@@ -37,6 +37,47 @@
   
   
   }
+
+  .hello,
+  .im,
+  .shirleyfade,
+  .sparkle {
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    background-clip: text;
+    opacity: 0;
+    animation-duration: 3s; /* Adjust the animation duration as needed */
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+  }
+  
+  .hello {
+    animation-name: fadeIn;
+    animation-delay: 0s;
+  }
+  
+  .im {
+    animation-name: fadeIn;
+    animation-delay: 1s;
+  }
+  
+  .shirleyfade {
+    animation-name: fadeIn;
+    animation-delay: 2s;
+  }
+  
+  .sparkle {
+    animation-name: fadeIn;
+    animation-delay: 3s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
   .left{
     padding-left: 30px;
   }
@@ -70,4 +111,3 @@
     0% { transform: translateY(0); }
     100% { transform: translateY(-10px); }
   }
-  
