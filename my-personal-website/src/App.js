@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Work from "./components/Work";
 import Skills from "./components/Skills";
+import Contact from "./components/Contact";
 
 function App() {
   const [activePage, setActivePage] = useState("home"); // Default active page is 'home'
@@ -59,6 +60,7 @@ function App() {
       <About id="About" />
       <Work id="Work" />
       <Skills id="Skills" />
+      <Contact id ="Contact"/>
     </div>
   );
 }
