@@ -21,3 +21,7 @@
   .right p.active {
     color: #725CFF;
   }
+
+  .right p {
+    cursor: pointer; /* Add this line to show pointer cursor on hover */
+  }
