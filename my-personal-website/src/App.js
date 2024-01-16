@@ -30,25 +30,30 @@ function App() {
     const aboutSection = document.getElementById('About');
     const workSection = document.getElementById('Work');
     const skillsSection = document.getElementById('Skills');
+    const contactSection = document.getElementById('Contact');
   
     const sectionOffsets = {
       home: homeSection.offsetTop,
       about: aboutSection.offsetTop,
       work: workSection.offsetTop,
       skills: skillsSection.offsetTop,
+      contact: contactSection.offsetTop,
     };
   
-    // Set a threshold value for each section
-    const threshold = 100;
+    // Set a dynamic threshold based on the container height
+    const threshold = Math.min(window.innerHeight * 0.4, 100);
   
+    // setting the pages that are active 
     if (scrollPosition >= sectionOffsets.home - threshold && scrollPosition < sectionOffsets.about - threshold) {
       setActivePage('home');
     } else if (scrollPosition >= sectionOffsets.about - threshold && scrollPosition < sectionOffsets.work - threshold) {
       setActivePage('about');
     } else if (scrollPosition >= sectionOffsets.work - threshold && scrollPosition < sectionOffsets.skills - threshold) {
       setActivePage('work');
-    } else if (scrollPosition >= sectionOffsets.skills - threshold) {
+    } else if (scrollPosition >= sectionOffsets.skills - threshold && scrollPosition < sectionOffsets.contact - threshold) {
       setActivePage('skills');
+    } else if (scrollPosition >= sectionOffsets.contact - threshold) {
+      setActivePage('contact');
     }
   };
   

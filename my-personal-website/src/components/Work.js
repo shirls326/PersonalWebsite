@@ -65,9 +65,10 @@ export default function Work() {
         </h1>
         <h2>April 2021 - June 2021</h2>
         <ul className="info-list">
-          <li>Organized timestamp data using Python</li>
+          <li>Implemented ETL (extract, transform, and load) solution for business analytics.</li>
+          <li>Worked in a small, agile team using Python.</li>
           <li>Exported results to JSON format</li>
-          <li>Collaborated with supervisor from Google to advance project</li>
+          <li>Integrated with InData time tracking and project management solutions</li>
         </ul>
       </div>
       <div
@@ -79,9 +80,9 @@ export default function Work() {
         </h1>
         <h2>April 2021 - June 2021</h2>
         <ul className="info-list">
-          <li>Organized timestamp data using Python</li>
-          <li>Exported results to JSON format</li>
-          <li>Collaborated with supervisor from Google to advance project</li>
+          <li>Instructed students in mathematics for a total of six hours per week</li>
+          <li>Provided constructive feedback to students about their strengths and weaknesses</li>
+          <li>Communicated with students' parents to assess students' needs</li>
         </ul>
       </div>
     </div>
