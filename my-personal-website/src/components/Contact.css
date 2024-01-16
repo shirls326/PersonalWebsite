@@ -1,4 +1,23 @@
 .Contact{
     background-color: #0d1821;
     height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    
+
+}
+
+.socials{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.iconsocial{
+    height: 10vh;
+    width: auto;
+
 }

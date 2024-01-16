@@ -10,7 +10,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 
 function App() {
-  const [activePage, setActivePage] = useState("home"); // Default active page is 'home'
+  const [activePage, setActivePage] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
