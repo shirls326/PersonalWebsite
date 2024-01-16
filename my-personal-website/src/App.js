@@ -26,35 +26,32 @@ function App() {
 
   const handleSetActivePage = () => {
     const scrollPosition = window.scrollY;
-    const homeSection = document.getElementById("Home");
-    const aboutSection = document.getElementById("About");
-    const workSection = document.getElementById("Work");
-    const skillsSection = document.getElementById("Skills");
-
-    if (scrollPosition >= 0 && scrollPosition < homeSection.offsetHeight) {
-      setActivePage("home");
-    } else if (
-      scrollPosition >= homeSection.offsetHeight &&
-      scrollPosition < homeSection.offsetHeight + aboutSection.offsetHeight
-    ) {
-      setActivePage("about");
-    } else if (
-      scrollPosition >= homeSection.offsetHeight + aboutSection.offsetHeight &&
-      scrollPosition <
-        homeSection.offsetHeight +
-          aboutSection.offsetHeight +
-          workSection.offsetHeight
-    ) {
-      setActivePage("work");
-    } else if (
-      scrollPosition >=
-      homeSection.offsetHeight +
-        aboutSection.offsetHeight +
-        workSection.offsetHeight
-    ) {
-      setActivePage("skills");
+    const homeSection = document.getElementById('Home');
+    const aboutSection = document.getElementById('About');
+    const workSection = document.getElementById('Work');
+    const skillsSection = document.getElementById('Skills');
+  
+    const sectionOffsets = {
+      home: homeSection.offsetTop,
+      about: aboutSection.offsetTop,
+      work: workSection.offsetTop,
+      skills: skillsSection.offsetTop,
+    };
+  
+    // Set a threshold value for each section
+    const threshold = 100;
+  
+    if (scrollPosition >= sectionOffsets.home - threshold && scrollPosition < sectionOffsets.about - threshold) {
+      setActivePage('home');
+    } else if (scrollPosition >= sectionOffsets.about - threshold && scrollPosition < sectionOffsets.work - threshold) {
+      setActivePage('about');
+    } else if (scrollPosition >= sectionOffsets.work - threshold && scrollPosition < sectionOffsets.skills - threshold) {
+      setActivePage('work');
+    } else if (scrollPosition >= sectionOffsets.skills - threshold) {
+      setActivePage('skills');
     }
   };
+  
 
   return (
     <div className="App">
