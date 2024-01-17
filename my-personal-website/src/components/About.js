@@ -39,14 +39,12 @@ export default function About() {
   
   return (
     <div className={`About Container`} id="About">
-    <h2 ref ={containerRef} className={`AboutDes ${isVisible ? 'visible' : ''}`}>
-        I'm currently cruising through my third year as a Computer Science
-        maestro at Lehigh University. Coding is my jam, and I thrive on
-        unraveling puzzles both for myself and fellow problem-solving
-        enthusiasts. As a TA for Lehigh's CSE007 and CSE017, I'm on a mission to
-        guide aspiring programmers on their educational journey. Outside of the
-        digital realm, you'll catch me singing, coding, conquering rock walls,
-        gliding on ice, and embarking on adventures around the world. ☻
+      <h2 ref ={containerRef} className={`AboutDes ${isVisible ? 'visible' : ''}`}>
+      Hello! I am a 3rd year Computer Science student at Lehigh University with a passion for
+      web development. I am a TA for Lehigh's intro-level computer science classes and
+      enjoy teaching and mentoring students beginning their programming journeys. When
+      I'm not coding, I like to sing, rock climb, ice skate, cook, and explore the world
+      around me. <br /> Feel free to say hi ☻
       </h2>
       <img src={shirleyimg2} alt="shirleyimg2" className="shirleyimg2" />
     </div>
