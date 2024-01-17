@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-export default function Navbar({ visible, activePage }) {
+export default function Navbar({ activePage, setActivePage }) {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -9,11 +9,12 @@ export default function Navbar({ visible, activePage }) {
         top: section.offsetTop,
         behavior: 'smooth',
       });
+      setActivePage(sectionId.toLowerCase());
     }
   };
 
   return (
-    <div className={`nav_bar ${visible ? 'visible' : ''}`}>
+    <div className={"nav_bar"}>
       <div className="left">
         <p>Shirley ☻</p>
       </div>

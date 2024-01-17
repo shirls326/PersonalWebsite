@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar activePage={activePage} />
+      <Navbar activePage={activePage} setActivePage={setActivePage} />
       <Home id="Home" />
       <About id="About" />
       <Work id="Work" />
