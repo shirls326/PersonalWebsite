@@ -4,9 +4,10 @@ import './Navbar.css';
 export default function Navbar({ activePage, setActivePage }) {
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
+    const offset = section.offsetTop;
     if (section) {
       window.scrollTo({
-        top: section.offsetTop,
+        top: offset,
         behavior: 'smooth',
       });
       setActivePage(sectionId.toLowerCase());
