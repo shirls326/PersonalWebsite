@@ -16,7 +16,20 @@
     opacity: 0;
     transform: translateY(20px); /* Optionally, you can add some initial translation */
     transition: opacity 0.5s, transform 0.5s; /* Optional: Add transitions for smoother animation */
+    /* margin: 2em 0; */
+    /* overflow: hidden; */
   }
+
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .Work-Container {
+      width: 90vw; /* Adjust the width for smaller screens */
+      height: auto; /* Allow the container to expand based on content */
+    }
+   
+  }
+    
+  
   
   .Work-Container.visible {
     opacity: 1;
@@ -30,15 +43,23 @@
 
   }
   
-  .TA-title{
+  .TA-title {
     margin-bottom: -0.5em;
+    font-size: 2em; /* Default font size for TA-title */
+  
+    @media (max-width: 768px) {
+      /* Adjust font size for smaller screens */
+      font-size: calc(1.5em + 1vw);
+      min-font-size: 1.5em; /* Set a minimum font size for the title */
+    }
   }
 
   .info-list{
-    font-size: 1.5em;
+    font-size: 1.5vw; /* Use vw units for responsive font size */
     margin-left: -0.25em;
     padding-bottom: 5em;
     margin: 1.3em;
+
  
   }
 
