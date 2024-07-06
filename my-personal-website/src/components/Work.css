@@ -17,7 +17,7 @@
     transform: translateY(20px); /* Optionally, you can add some initial translation */
     transition: opacity 0.5s, transform 0.5s; /* Optional: Add transitions for smoother animation */
     /* margin: 2em 0; */
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   @media (max-width: 768px) {
@@ -25,6 +25,7 @@
     .Work-Container {
       width: 90vw; /* Adjust the width for smaller screens */
       height: auto; /* Allow the container to expand based on content */
+      overflow: scroll;
     }
    
   }

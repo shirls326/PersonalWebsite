@@ -1,6 +1,6 @@
 .Container{
   min-height: 105vh; 
-  width: 100vw;
+  width: auto;
 }
 
 .App{
