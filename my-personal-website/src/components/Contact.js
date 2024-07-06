@@ -23,6 +23,7 @@ export default function Contact() {
           </svg>
         </a>
       </div>
+      
     </div>
   );
 }

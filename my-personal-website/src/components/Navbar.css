@@ -16,6 +16,10 @@
     z-index: 999;
   
   }
+  .left{
+    /* font-family: "Montez", cursive; */
+
+  }
 
   .right p.active {
     color: #725CFF;

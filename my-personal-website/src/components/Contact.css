@@ -1,6 +1,6 @@
 .Contact{
     background-color: #0d1821;
-    height: 40vh;
+    min-height: 30vh;
     display: flex;
     justify-content: center;
     flex-direction: column;

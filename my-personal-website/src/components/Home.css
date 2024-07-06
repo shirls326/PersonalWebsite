@@ -29,6 +29,8 @@
   }
   
   .shirley{
+    /* font-size: 1.25em; */
+    /* font-family: "Montez", cursive; */
     background-image: linear-gradient(45deg, #ED1AFF, #725CFF);
     -webkit-background-clip: text; /* For Safari/Chrome */
     background-clip: text;
