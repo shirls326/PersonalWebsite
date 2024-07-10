@@ -78,7 +78,7 @@ export default function Work() {
         <h1 className="TA-title Zaniac-title">
           Math Tutor<br></br>@Zaniac (Westport, CT)
         </h1>
-        <h2>April 2021 - June 2021</h2>
+        <h2>September 2018 - January 2019</h2>
         <ul className="info-list">
           <li>Instructed students in mathematics for a total of six hours per week</li>
           <li>Provided constructive feedback to students about their strengths and weaknesses</li>
