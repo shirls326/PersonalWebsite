@@ -1,20 +1,72 @@
 .About{
-    background-color: #0d1821;
+    /* background-color: #0d1821; */
+    /* background-color: #6e29cf; */
+    /* background-color: #a062f7; */
+    /* background-color: #f8c99a; */
+    /* background-color: #e981a4; */
+    /* background-color: #a66bff; */
+    /* background-color: #e75ca1; */
+    background-color: #FF7BA9;
+    .yellowHighlight{
+      color: #FFFD96;
+      font-weight: bold;
+
+      
+    }
+
+
+
+    /* background-color: #ce92c3; */
+
+
+
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 155vh;
+    padding-top: 25vh;
+
+    h1{
+      
+      margin: 0;
+      padding: 0;
+      font-family: "Molle variant0", Tofu, cursive;
+      font-weight: 10000;
+      /* font-style: italic; */
+      font-size: 5em; 
+      text-rendering: optimizeLegibility;
+      color: #FFFD96;
+
+    }
+    
+    
+
+  }
+  .Content{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
+    text-align: left;
+
+;
   }
 
 
 
   .AboutDes{
-    padding: 10vw;
+    padding: 5% 10%;
     opacity: 0;
     transform: translateY(20px); /* Optionally, you can add some initial translation */
     transition: opacity 0.5s, transform 0.5s;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.05em;
   }
 
   .AboutDes.visible{
@@ -23,8 +75,36 @@
   
    } 
   .shirleyimg2{
-    width: 25vw;
+    width: 40vw;
     height: auto;
-    padding: 10vw;
+    padding: 0 2%;
     border-radius: 30em;
+    overflow: visible;
+  }
+
+  /*media query */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .About{
+      padding-top: 10vh;
+      min-height: 110vh;
+
+      h1{
+        margin: 0;
+        font-size: 10vw;
+      }
+    }
+    .Content{
+      flex-direction: column-reverse;
+      padding: 0 5vw;
+    }
+    .shirleyimg2{
+      width: 50vw;
+      padding: 0;
+    }
+    .AboutDes{
+      padding-bottom: 2vh;
+      font-size: 4vw;
+
+    }
   }

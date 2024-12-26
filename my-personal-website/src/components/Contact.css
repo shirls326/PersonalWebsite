@@ -1,11 +1,21 @@
 .Contact{
-    background-color: #0d1821;
-    min-height: 30vh;
+    background-color: #E44274;
+    min-height: 40vh;
     display: flex;
+    padding-top: 5em;
     justify-content: center;
     flex-direction: column;
     position: relative;
     align-items: center;
+    h1{
+        color: #FFFD96;
+        font-family: "Molle variant0", Tofu, cursive;
+        font-size: 10vw;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        word-break: none;
+    }
     
 
 }
@@ -19,5 +29,16 @@
 .iconsocial{
     height: 10vh;
     width: auto;
+
+}
+
+/** media query **/
+@media (max-width: 768px) {
+    .Contact{
+        h1{
+            font-size: 12vw;
+        }
+    }
+    
 
 }

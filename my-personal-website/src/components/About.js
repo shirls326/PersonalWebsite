@@ -1,5 +1,6 @@
 import "./About.css";
-import shirleyimg2 from "./whirley.JPG";
+// import shirleyimg2 from "./whirley.JPG";
+import shirleyimg2 from "./Combined Elements.svg";
 import "animate.css"
 import React, { useEffect, useRef, useState } from "react";
 
@@ -39,15 +40,21 @@ export default function About() {
   
   return (
     <div className={`About Container`} id="About">
-      <h2 ref ={containerRef} className={`AboutDes ${isVisible ? 'visible' : ''}`}>
-      Hello! I am a 4th year Computer Science student at Lehigh University with a passion for
-      web development. I am a TA for Lehigh's intro-level computer science classes and
-      enjoy teaching and mentoring students beginning their programming journeys. 
-      Starting in the fall 2024, I will be an apprientice teacher for Lehigh's Web Design I class.
-      When I'm not coding, I like to sing, rock climb, ice skate, cook, and explore the world
-      around me. <br /> Feel free to say hi ☻
-      </h2>
-      <img src={shirleyimg2} alt="shirleyimg2" className="shirleyimg2" />
+      <h1>About Me</h1>
+      <div className="Content">
+  
+        <h2 ref ={containerRef} className={`AboutDes ${isVisible ? 'visible' : ''}`}>
+          Hello! I am a senior at Lehigh University studying <span className="yellowHighlight">Computer Science</span> with a passion for
+          frontend web development and education in computer science. I am currently a teaching assistant (TA) for Lehigh's intro-level, computer architecture and web systems computer science classes and
+          enjoy teaching and mentoring students beginning their programming journeys. 
+          Starting January 2025, I will be the <span className="yellowHighlight">Head TA</span> for Lehigh's Programming and Data Structure's class (CSE017).
+          I am currently <span className="yellowHighlight">seeking a full-time role</span> in software engineering or UI/UX for summer 2025.
+          When I'm not coding, I like to sing, ice skate, eat good food, and explore the world
+          around me. <br /> Feel free to reach out and hi <span className="yellowHighlight">☻ </span> 
+        </h2>
+        <img src={shirleyimg2} alt="shirleyimg2" className="shirleyimg2" />
+
+      </div>
     </div>
   );
 }

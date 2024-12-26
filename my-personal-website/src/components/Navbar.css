@@ -3,21 +3,29 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    align-items: center;
   
     width: 100%;
-    height: 10vh;
+    height: 8vh;
   
-    font-size: 2vw; /* or other relative units */
+    font-size: 2vw; 
     font-family: 'Itim';
     color: white;
-    background-color: #0d1821;
+
+    background-color: #FF7BA9;
+
+
     box-shadow: #0D1821;
     
     z-index: 999;
   
   }
   .left{
-    /* font-family: "Montez", cursive; */
+
+    span{
+      font-family: "Molle variant0", Tofu, cursive;
+    }
+
 
   }
 
@@ -26,5 +34,17 @@
   }
 
   .right p {
-    cursor: pointer; /* Add this line to show pointer cursor on hover */
+    cursor: pointer; 
+  }
+
+
+  /*media query */
+  @media (max-width: 768px) {
+    .nav_bar{
+      visibility: hidden;
+      height: 0;
+      width: 0;
+      padding: 0;
+      margin: 0;
+    }
   }

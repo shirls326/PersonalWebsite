@@ -1,24 +1,36 @@
+
+
 .Work{
+    --accentColor: #E44274;
     position: relative;
     display: flex;
-    background-color: #0d1821;
+    flex-direction: column;
+
+
     align-items: center;
     justify-content: space-around;
+    padding: 5em 0; 
+
+    background-color: #F8DBD5;
+
+
+
+
+
+    h1{
+      color: #E44274;
+      font-family: "Molle variant0", Tofu, cursive;
+      font-size: 8.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    
+
+    
   }
 
-.Work-Container{
-    /* background-color: #17222A; */
-    background-color: rgba(63,17,194,0.1);
-    height: 65vh;
-    width: 85vw;
-    border-radius: 2em;
-    margin: 2em;
-    opacity: 0;
-    transform: translateY(20px); /* Optionally, you can add some initial translation */
-    transition: opacity 0.5s, transform 0.5s; /* Optional: Add transitions for smoother animation */
-    /* margin: 2em 0; */
-    overflow: hidden;
-  }
+
 
   @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
@@ -30,46 +42,177 @@
    
   }
     
+
   
   
-  .Work-Container.visible {
+  .Work-Container .visible {
     opacity: 1;
     transform: translateY(0);
   }
-  .TA{
-    display: flex;
-    position:relative;
-    align-items: center;
-    flex-direction: column;
-
+  .experienceCards.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
   
-  .TA-title {
-    margin-bottom: -0.5em;
-    font-size: 2em; /* Default font size for TA-title */
+
+
   
-    @media (max-width: 768px) {
-      /* Adjust font size for smaller screens */
-      font-size: calc(1.5em + 1vw);
-      min-font-size: 1.5em; /* Set a minimum font size for the title */
-    }
+  .Experience{
+
+    min-height: 40%;
+    width: auto;
+    color:black;
+
+    
+
+
+
+  }
+  .ExperienceAndSkills.visible{
+    opacity: 1;
+    transform: translateY(0);
   }
 
-  .info-list{
-    font-size: 1.5vw; /* Use vw units for responsive font size */
-    margin-left: -0.25em;
-    padding-bottom: 5em;
-    margin: 1.3em;
+  .ExperienceAndSkills{
 
- 
-  }
+    min-height: 70%;
+    transform: translateY(20px); /* Optionally, you can add some initial translation */
+    transition: opacity 0.5s, transform 0.5s;
 
-  .Zaniac-title{
+    opacity: 0;
+
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-evenly;
     text-align: center;
 
+
+    .Experience{
+
+      max-width: 50%;
+      height: auto;
+
+  
+  
+  
+    }
+
+    .techSkills{
+      height: 100%;
+      width: 70%;
+      color:black;
+      /* background-color: white; */
+
+      .codingSkillsIcons{
+        height: 100%;
+        /* background-color: red; */
+      }
+
+      svg{
+        height: 10%;
+        width: 10%;
+        color:black;
+        /* background-color: blue; */
+      }
+
+    }
+
+    h2{
+      color:black;
+      font-family: "Raleway", sans-serif;
+      font-weight: 300;
+      font-size: 5vw;
+      font-style:italic;
+      .twinkle{
+        color:#E44274;
+        font-style: normal;
+  
+      }
+    }
+
+    h3{
+      color:black;
+      font-family: "Raleway", sans-serif;
+      font-size: 3vw;
+      font-weight: 300;
+      padding: 0;
+      margin-bottom: 2%;
+    }
+    
+    /* padding: 2em; */
   }
+
+
+/*media query */
+
+@media (max-width: 768px) {
+
+  
+  /* Adjust styles for smaller screens */
+
+
+
+
+ 
+
+ 
+
+  h3 {
+    font-size: 4vw;
+  }
+
+  .Work{
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-size: 50px;
+    h1{
+      font-size: 15vw;
+      
+    }
+    h2 {
+      font-size: 8vw;
+    }
+    h3{
+      font-size: 6vw;
+    }
+    .ExperienceAndSkills {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: auto;
+      font-size: 2vw;
+    }
+    .Experience {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 2em;
+      p{
+        font-size: 4vw;
+      }
+
+    }
+
+    .techSkills {
+      width: 100%;
+      height: auto;
+      /* background-color: red; */
+
+      margin-top: 2em;
+      svg{
+        padding: 1%;
+        min-height: 10%;
+        min-width: 10%;
+      }
+    }
+  }
+}
+  
+
+
 
   

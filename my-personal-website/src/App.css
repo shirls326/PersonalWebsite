@@ -1,13 +1,22 @@
 .Container{
-  min-height: 105vh; 
+  min-height: 10vh; 
   width: auto;
+  background-color: #E44274;
+
 }
 
 .App{
-  font-family: 'Itim';
+  /* font-family: 'Itim'; */
   color: white;
 
 
+}
+
+
+@font-face {
+  font-family: "Molle variant0";
+  src: url('Molle-Italic.ttf') format('truetype');
+  font-weight: 400;
 }
 
 

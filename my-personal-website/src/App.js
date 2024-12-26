@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Work from "./components/Work";
-import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
     const homeSection = document.getElementById('Home');
     const aboutSection = document.getElementById('About');
     const workSection = document.getElementById('Work');
-    const skillsSection = document.getElementById('Skills');
+    const skillsSection = document.getElementById('Projects');
     const contactSection = document.getElementById('Contact');
   
     const sectionOffsets = {
@@ -51,7 +51,7 @@ function App() {
     } else if (scrollPosition >= sectionOffsets.work - threshold && scrollPosition < sectionOffsets.skills - threshold) {
       setActivePage('work');
     } else if (scrollPosition >= sectionOffsets.skills - threshold && scrollPosition < sectionOffsets.contact - threshold) {
-      setActivePage('skills');
+      setActivePage('projects');
     } else if (scrollPosition >= sectionOffsets.contact - threshold) {
       setActivePage('contact');
     }
@@ -64,7 +64,7 @@ function App() {
       <Home id="Home" />
       <About id="About" />
       <Work id="Work" />
-      <Skills id="Skills" />
+      <Projects id="Projects" />
       <Contact id ="Contact"/>
     </div>
   );

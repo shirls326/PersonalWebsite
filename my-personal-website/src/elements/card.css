@@ -1,0 +1,101 @@
+.projectCard {
+  /* background-color: rgb(41, 16, 85); */
+  width: 25vw;
+  height: 60vh;
+  border-radius: 20px;
+
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border: 2px;
+  border-style: solid;
+  border-radius: 40px;
+
+
+
+
+  background: rgba( 255, 255, 255, 0.15 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border: 1.5px solid rgba( 255, 255, 255, 0.5 );
+  overflow: hidden; 
+  transition: transform 0.3s ease; 
+
+  h2 {
+    font-size: 1.75rem;
+    font-family: "raleway", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5em;
+  }
+  .twinkle{
+    font-style: normal;
+    color: #FFFD96;
+  }
+}
+
+.projectCard:hover {
+  transform: translateY(-10px); /* Move the card up on hover */
+}
+  
+.projectImg {
+  /* background-color: blueviolet; */
+  
+  width: 100%;
+  height: 60%;
+  object-fit: scale-down;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.projectText {
+  padding: 0.5em;
+  padding-bottom: 0.1em;
+
+  p {
+    font-weight: 500;
+  }
+}
+
+
+/** Media Queries **/
+@media (max-width: 768px) {
+  .projectCard {
+    min-height: fit-content;
+
+    margin: 10% 10%;
+    width: 90vw;
+    height: 60vh;
+
+    h2{
+      font-size: 6vw;
+    }
+    p{
+      font-size: 3.5vw;
+
+    }
+    .projectText{
+      max-height: 100%;
+      padding: 0.5em;
+      padding-bottom: 0.1em;
+      min-height:fit-content;
+      /* background-color: red; */
+    }
+  }
+
+  .projectCard:hover {
+    transform: none; /* Disable hover effect on mobile to provide better experience if user decides to click on it for whatever reason */
+  }
+}
