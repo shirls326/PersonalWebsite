@@ -1,6 +1,7 @@
 
 
 .Work{
+  
     --accentColor: #E44274;
     position: relative;
     display: flex;
@@ -9,7 +10,7 @@
 
     align-items: center;
     justify-content: space-around;
-    padding: 5em 0; 
+    padding: 5em 5%; 
 
     background-color: #F8DBD5;
 
