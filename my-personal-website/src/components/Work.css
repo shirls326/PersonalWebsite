@@ -13,10 +13,6 @@
 
     background-color: #F8DBD5;
 
-
-
-
-
     h1{
       color: #E44274;
       font-family: "Molle variant0", Tofu, cursive;
@@ -105,8 +101,19 @@
       /* background-color: white; */
 
       .codingSkillsIcons{
-        height: 100%;
-        /* background-color: red; */
+
+        div {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 1em 0;
+          
+          svg {
+            margin: 0 1em;
+          }
+        }
       }
 
       svg{
