@@ -1,4 +1,4 @@
-import Card from "../elements/Card";
+import Card from "../components/Card";
 import Melismatics from "../assets/LehighMelismaticsMockUp.png";
 import UniMart from "../assets/UniMart Mockup 2.png";
 import TheBuzz from "../assets/buzz-buzz.png";

@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import "animate.css";
 
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Work from "./components/Work";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import Navbar from "./sections/Navbar";
+import Home from "./sections/Home";
+import About from "./sections/About";
+import Work from "./sections/Work";
+import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 function App() {
   const [activePage, setActivePage] = useState("home");

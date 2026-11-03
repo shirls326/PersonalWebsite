@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Work.css";
 import "animate.css";
-import ResumeCard from "../elements/ResumeCard.jsx";
-
+import ResumeCard from "../components/ResumeCard";
 
 /*
 
