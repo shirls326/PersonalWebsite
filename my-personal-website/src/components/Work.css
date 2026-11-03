@@ -1,11 +1,8 @@
-
-
 .Work{
     --accentColor: #E44274;
     position: relative;
     display: flex;
     flex-direction: column;
-
 
     align-items: center;
     justify-content: space-around;
@@ -16,17 +13,11 @@
     h1{
       color: #E44274;
       font-family: "Molle variant0", Tofu, cursive;
-      font-size: 8.5rem;
+      font-size: 5rem;
       margin: 0;
       padding: 0;
     }
-
-    
-
-    
   }
-
-
 
   @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
@@ -35,42 +26,30 @@
       height: auto; /* Allow the container to expand based on content */
       overflow: scroll;
     }
-   
   }
-    
-
-  
   
   .Work-Container .visible {
     opacity: 1;
     transform: translateY(0);
   }
+
   .experienceCards.visible {
     opacity: 1;
     transform: translateY(0);
   }
-  
 
-
-  
   .Experience{
-
     min-height: 40%;
     width: auto;
     color:black;
-
-    
-
-
-
   }
+
   .ExperienceAndSkills.visible{
     opacity: 1;
     transform: translateY(0);
   }
 
   .ExperienceAndSkills{
-
     min-height: 70%;
     transform: translateY(20px); /* Optionally, you can add some initial translation */
     transition: opacity 0.5s, transform 0.5s;
@@ -83,15 +62,9 @@
     justify-content: space-evenly;
     text-align: center;
 
-
     .Experience{
-
       max-width: 50%;
       height: auto;
-
-  
-  
-  
     }
 
     .techSkills{
@@ -129,19 +102,20 @@
       color:black;
       font-family: "Raleway", sans-serif;
       font-weight: 300;
-      font-size: 5vw;
-      font-style:italic;
+      font-size: 3rem;
+      font-style: italic;
+      
       .twinkle{
         color:#E44274;
         font-style: normal;
-  
+        margin: 0 10px;
       }
     }
 
     h3{
       color:black;
       font-family: "Raleway", sans-serif;
-      font-size: 3vw;
+      font-size: 2rem;
       font-weight: 300;
       padding: 0;
       margin-bottom: 2%;
@@ -150,21 +124,11 @@
     /* padding: 2em; */
   }
 
-
 /*media query */
 
 @media (max-width: 768px) {
 
-  
   /* Adjust styles for smaller screens */
-
-
-
-
- 
-
- 
-
   h3 {
     font-size: 4vw;
   }
@@ -175,7 +139,6 @@
     font-size: 50px;
     h1{
       font-size: 15vw;
-      
     }
     h2 {
       font-size: 8vw;
