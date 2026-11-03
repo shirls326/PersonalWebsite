@@ -1,7 +1,7 @@
 import Card from "../elements/Card";
 import Melismatics from "../assets/LehighMelismaticsMockUp.png";
 import UniMart from "../assets/UniMart Mockup 2.png";
-import PerfectInterval from "../assets/Mockup Phone.png";
+import TheBuzz from "../assets/buzz-buzz.png";
 
 import "./Projects.css";
 // import React, { lazy, Suspense } from 'react';
@@ -21,12 +21,11 @@ export default function Projects() {
           projectName='UniMart (AWS Winner)' 
           des="Built an e-commerce platform tailored for university students, offering a seamless shopping experience for textbooks, supplies, and other essentials. Won AWS Lehigh Valley Hackathon 2024"
           imgSrc={UniMart}
-
         />
         <Card 
-          projectName='Perfect Interval' 
-          des="Designed a mobile e-commerce website tailored for musicians, featuring a vibrant yet intuitive interface for seamless browsing and purchasing of instruments, repair tools, and accessories."
-          imgSrc= {PerfectInterval}
+          projectName='The Buzz' 
+          des="Led the development of a social media platform using React, Flutter, Java, Spark, Spring Boot, and PostgreSQL. Worked through the software development lifecycle, coordinating implementation, debugging, integration, and deployment."
+          imgSrc={TheBuzz}
         />
       </div>
 

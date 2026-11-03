@@ -38,7 +38,7 @@ export default function About() {
     }, []);
   
   return (
-    <div className={`About Container`} id="About">
+    <div className={"About Container"} id="About">
       <h1>About Me</h1>
       <div className="Content">
         <h2 ref ={containerRef} className={`AboutDes ${isVisible ? 'visible' : ''}`}>
