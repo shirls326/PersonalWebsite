@@ -1,12 +1,8 @@
-import React from 'react';
 // import group1img from '../Group 1.png';
 import './Home.css';
-// import shirleySit from '../images/Shirley Transparent Sitting.png';
-// import shirleySit from '../images/Untitled design.png';
-import shirleySit from '../images/test2.svg';
-
-
-
+// import shirleySit from '../assets/Shirley Transparent Sitting.png';
+// import shirleySit from '../assets/Untitled design.png';
+import shirleySit from '../assets/test2.svg';
 
 window.addEventListener('scroll', function() {
   const scrollPosition = window.scrollY;
@@ -29,10 +25,6 @@ export default function Home() {
         </h1>
         <h1 className='sparkles purple'>✦</h1>
         <h1 className='sparkles yellow'>✦</h1>
-
-    
-
-    
         <img src={shirleySit} alt="Logo" className="ShirleySit" />
       </div>
     </div>

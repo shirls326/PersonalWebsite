@@ -1,8 +1,7 @@
 import "./About.css";
-// import shirleyimg2 from "./whirley.JPG";
-import shirleyimg2 from "./Combined Elements.svg";
+import shirleyimg2 from "../assets/Combined Elements.svg";
 import "animate.css"
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function About() {
 
@@ -42,18 +41,29 @@ export default function About() {
     <div className={`About Container`} id="About">
       <h1>About Me</h1>
       <div className="Content">
-  
         <h2 ref ={containerRef} className={`AboutDes ${isVisible ? 'visible' : ''}`}>
-          Hello! I am a senior at Lehigh University studying <span className="yellowHighlight">Computer Science</span> with a passion for
-          frontend web development and education in computer science. I am currently a teaching assistant (TA) for Lehigh's intro-level, computer architecture and web systems computer science classes and
-          enjoy teaching and mentoring students beginning their programming journeys. 
-          Starting January 2025, I will be the <span className="yellowHighlight">Head TA</span> for Lehigh's Programming and Data Structure's class (CSE017).
-          I am currently <span className="yellowHighlight">seeking a full-time role</span> in software engineering or UI/UX for summer 2025.
+          Hello! I'm a <span className="yellowHighlight">Software Engineer</span> who enjoys building software that is technically thoughtful, intuitive to use, and accessible to the people it serves.
+          <br />
+          <br />
+          I have experience building and shipping web applications with <span className="yellowHighlight">React</span>, <span className="yellowHighlight">TypeScript</span>, <span className="yellowHighlight">JavaScript</span>, <span className="yellowHighlight">Node.js</span>, <span className="yellowHighlight">C#/.NET</span>, and <span className="yellowHighlight">SQL</span>, as well as working
+          with <span className="yellowHighlight">APIs</span>, <span className="yellowHighlight">databases</span>, and <span className="yellowHighlight">AWS</span>. In my current role, Ive worked across the development lifecycle from implementation and testing
+          to deployment and production support.
+          <br />
+          <br />
+          I'm particularly interested in <span className="yellowHighlight">frontend engineering</span>, <span className="yellowHighlight">developer tools</span>, and <span className="yellowHighlight">AI-powered applications</span>, while continuing to deepen my skills across the full stack.
+          <br />
+          <br />
+          I've worked in <span className="yellowHighlight">UI/UX</span> and <span className="yellowHighlight">accessibility</span>, taught web design at Lehigh University, and collaborated with students, designers,
+          and technical teams to turn ideas into usable products.
+          <br />
+          <br />
           When I'm not coding, I like to sing, ice skate, eat good food, and explore the world
-          around me. <br /> Feel free to reach out and hi <span className="yellowHighlight">☻ </span> 
+          around me.
+          <br />
+          <br />
+          Feel free to reach out and hi <span className="yellowHighlight">☻ </span> 
         </h2>
         <img src={shirleyimg2} alt="shirleyimg2" className="shirleyimg2" />
-
       </div>
     </div>
   );

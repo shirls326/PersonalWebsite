@@ -8,17 +8,20 @@
     color:black;
     /* min-width: 60%; */
 
-
-
-
     font-family: "Raleway", sans-serif;
 
     .leftResume{
         width: 40%;
     }
+    
     h3{
         font-weight: 400;
         font-size: 1.3em;
+    }
+        
+    h4{
+        font-weight: 400;
+        margin: 0.5rem 0;
     }
 
     font-optical-sizing: auto;
@@ -51,10 +54,12 @@
         h3{
             font-size: 5vw;
         }
-       
+        
+        h4{
+            margin: 0 1rem;
+        }
 
         .info{
-            
             min-width: 70%;
             max-width: 100%;
         }

@@ -1,9 +1,9 @@
-import React from "react";
+import Card from "../elements/Card";
+import Melismatics from "../assets/LehighMelismaticsMockUp.png";
+import UniMart from "../assets/UniMart Mockup 2.png";
+import PerfectInterval from "../assets/Mockup Phone.png";
+
 import "./Projects.css";
-import Card from "../elements/card.jsx";
-import Melismatics from "../images/LehighMelismaticsMockUp.png";
-import UniMart from "../images/UniMart Mockup 2.png";
-import PerfectInterval from "../images/Mockup Phone.png";
 // import React, { lazy, Suspense } from 'react';
 
 

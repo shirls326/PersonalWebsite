@@ -58,25 +58,38 @@ export default function Work() {
 
         
         
-        <ResumeCard 
-          timeFrame={"Since August 2024"} 
-          jobTitle={"Lehigh University Teaching Assistant (CSE202, CSE264)"}
-          des={"Teaching Assistant for Intro to Computer Architecture (CSE202) and Web Systems Programming (CSE264) classes. Mentor students, grade assignments, and hold office hours each week."}
+        <ResumeCard
+          timeFrame={"Jun 2025 - Present"} 
+          jobTitle={"Software Engineer"}
+          company={"Vertafore"}
+          bullets={[
+            "Ship user-facing web pages for new coverage policy flows using ASP.NET, emphasizing a clean and intuitive UI",
+            "Leverage AI-assisted development tools to quickly learn unfamiliar technologies, accelerate implementation generate test cases, and evaluate technical approaches while validating all code via manual review and testing",
+            "Architect and implement a robust SFTP client using C#/.NET, streamlining secure file transfers across internal flows",
+            "Optimize database request handling via UniVerse BASIC, leading to a 30% speedup in response times",
+            "Diagnose and resolve production incidents through root cause analysis and deploying scalable fixes"
+          ]}
         />
-        <ResumeCard 
-          timeFrame={"August 2024 - Dec 2024"} 
-          jobTitle={"Lehigh University Apprentice Teacher (DES070)"}
-          des={"Improving students' grasp of key web design concepts and tools such as design principles, Figma, HTML and CSS. Spend 8-10 hours per week creating course content and meeting with students one on one. Create weekly class workshops and lecture content, meeting with students one-on-one to reinforce concepts."}
+        <ResumeCard
+          timeFrame={"Jan 2025 - Nov 2025"} 
+          jobTitle={"Design Consultant"}
+          company={"Lehigh University"}
+          bullets={[
+            "Provided cross-functional design support for teams in the capstone course, expediting development workflows",
+            "Produced Figma prototypes for 3+ capstone group websites, accelerating design-to-development handover"
+          ]}
         />
-        <ResumeCard 
-          timeFrame={"Since August 2023"} 
-          jobTitle={"Lehigh University Teaching Assistant (CSE007, CSE017)"}
-          des={"Teaching Assistant for Intro to Programming (CSE007) and Data Structures and Programming (CSE017) classes. Mentor students, grade 200+ students each semester, work in lab with Professor to assist, and hold 3+ office hours each week."}
+        <ResumeCard
+          timeFrame={"Jan 2025 - Jun 2025"} 
+          jobTitle={"Software Engineer"}
+          company={"Our Florida"}
+          bullets={[
+            "Developed front-facing webpage (our-florida.org) from the ground up using React, Vite, Node.js, and RESTful APIs",
+            "Implemented a lightweight CI/CD pipeline to enable seamless deployments to a custom domain",
+            "Created accessible, user-focused UI/UX designs in Figma, enhancing overall engagement and ease of use",
+            "Collaborated with directors and stakeholders to refine 15+ design concepts, resulting in a better user experience"
+          ]}
         />
-        
-
-
-        
     
       </div>
       <div className="techSkills">
